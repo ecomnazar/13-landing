@@ -8,10 +8,10 @@ export default function Home() {
       <header>
         <nav className="bg-primary w-full py-3">
           <Container>
-            <Flex className="gap-x-8">
+            <Flex enableJustifyBetween className="gap-x-8">
               <h2 className="text-[24px] font-semibold">13lik</h2>
               <ul>
-                <Flex className="gap-x-4">
+                <Flex className="gap-x-16">
                   <li>Perfumes</li>
                   <li>Beauty</li>
                 </Flex>
@@ -20,7 +20,7 @@ export default function Home() {
           </Container>
         </nav>
         <Container className="!max-w-[1300px] mt-8">
-          <div className="h-[700px] w-full relative">
+          <div className="h-[300px] sm:h-[350px] md:h-[500px] lg:h-[700px] w-full relative">
             <Image src={'/MainBanner.png'} fill alt="Banner" />
           </div>
           <div className="relative h-[20px] mt-8 w-[80%] mx-auto">
@@ -33,7 +33,7 @@ export default function Home() {
         <section>
           <Container>
             <h3 className="text-primary text-center text-[36px] font-bold">HERE IS HOW IT WORKS:</h3>
-            <div className="grid grid-cols-4 gap-8 mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-10">
               <div className="h-[200px] bg-primary"></div>
               <div className="h-[200px] bg-primary"></div>
               <div className="h-[200px] bg-primary"></div>
@@ -45,17 +45,17 @@ export default function Home() {
         <section className="mt-24 mb-16">
           <Container className="">
             <h3 className="text-primary mx-auto text-center text-[36px] font-bold max-w-[700px]">SELECT WHAT YOU WOULD LIKE TO TRY FROM OUR BEST SELLERS</h3>
-            <div className="grid grid-cols-3 gap-8 mt-10">
-              <div className="h-[550px] bg-primary"></div>
-              <div className="h-[550px] bg-primary"></div>
-              <div className="h-[550px] bg-primary"></div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+              <div className="h-[300px] md:h-[450px] lg:h-[550px] bg-primary"></div>
+              <div className="h-[300px] md:h-[450px] lg:h-[550px] bg-primary"></div>
+              <div className="h-[300px] md:h-[450px] lg:h-[550px] bg-primary"></div>
             </div>
           </Container>
         </section>
 
         <section>
           <Container>
-            <div className="h-[450px] w-full relative">
+            <div className="h-[200px] sm:h-[350px] md:h-[450px] w-full relative">
               <Image src={'/FooterBanner.png'} fill alt="Banner" />
             </div>
           </Container>
@@ -64,8 +64,8 @@ export default function Home() {
 
       <footer className="bg-primary py-16">
         <Container>
-          <Flex className="!items-start" enableJustifyBetween>
-            <Flex className="gap-x-4">
+          <Flex className="items-center text-center md:text-left space-y-8 md:space-y-0 md:!items-start flex-col md:flex-row" enableJustifyBetween>
+            <Flex className="gap-x-4 flex-col space-y-4 sm:space-y-0 sm:flex-row">
               <Image src={'/GooglePlayIcon.png'} width={170} height={50} alt="Google Play" />
               <Image src={'/AppStoreIcon.png'} width={170} height={50} alt="Apple Store" />
             </Flex>
